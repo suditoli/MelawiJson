@@ -1,0 +1,14 @@
+.settings
+.project
+.classpath
+.idea
+*.iml
+*.iws
+*.imi
+*.log
+*target
+bin
+log.txt
+*logs
+*.pdf
+
