@@ -1,8 +1,6 @@
-package io.melawi;
+package io.melawi.json;
 
 import io.melawi.json.generate.JSONGenerator;
-import io.melawi.json.JSONArray;
-import io.melawi.json.JSONObject;
 import io.melawi.json.parser.JSONParser;
 import io.melawi.xml.generate.XMLGenerator;
 import java.math.BigDecimal;
@@ -46,6 +44,8 @@ public class TestJSON {
         System.out.println("null field: " + project.isNull("null"));
         System.out.println("object to array: " + project.getJSONArray("repository"));
         System.out.println("array to object[0]: " + project.getJSONObject("bugs"));
+        System.out.println("get empty string as object: " + project.getJSONObject("empty"));
+        System.out.println("get empty string as object and child object: " + project.getJSONObject("empty").getJSONObject("imposible"));
         int intString = project.getInteger("integerString");
         System.out.println("IntergerString: " + intString);
 

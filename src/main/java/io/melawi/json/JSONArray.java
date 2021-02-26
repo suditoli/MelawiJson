@@ -288,18 +288,31 @@ public class JSONArray extends ArrayList implements JSONAware, JSONStreamAware {
 
     public JSONObject getJSONObject(int index) {
         try {
-            Object object = this.get(index);
-            return (JSONObject) object;
+            return (JSONObject) this.get(index);
         } catch (Exception ex) {
+            if (this.isEmpty(index)) {
+                return new JSONObject();
+            }
+            if (this.get(index) instanceof JSONArray) {
+                JSONArray jsonArray = (JSONArray) this.get(index);
+                return (JSONObject) jsonArray.getJSONObject(0);
+            }
             throw wrongValueFormatException(index, "JSONObject", null);
         }
     }
 
     public JSONArray getJSONArray(int index) {
         try {
-            Object object = this.get(index);
-            return (JSONArray) object;
+            return (JSONArray) this.get(index);
         } catch (Exception ex) {
+            if (this.isEmpty(index)) {
+                return new JSONArray();
+            }
+            if (this.get(index) instanceof JSONObject) {
+                JSONArray jsonArray = new JSONArray();
+                jsonArray.add(this.get(index));
+                return jsonArray;
+            }
             throw wrongValueFormatException(index, "JSONArray", null);
         }
     }

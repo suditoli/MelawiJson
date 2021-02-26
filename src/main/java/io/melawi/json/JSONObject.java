@@ -318,11 +318,16 @@ public class JSONObject extends HashMap implements Map, JSONAware, JSONStreamAwa
     public JSONObject getJSONObject(String key) {
         try {
             Object object = this.get(key);
+            if (object == null) {
+                return new JSONObject();
+            }
             return (JSONObject) object;
         } catch (Exception ex) {
-            Object object = this.get(key);
-            if (object instanceof JSONArray) {
-                JSONArray jsonArray = (JSONArray) object;
+            if (this.isEmpty(key)) {
+                return new JSONObject();
+            }
+            if (this.get(key) instanceof JSONArray) {
+                JSONArray jsonArray = (JSONArray) this.get(key);
                 return (JSONObject) jsonArray.getJSONObject(0);
             }
             throw wrongValueFormatException(key, "JSONObject", null);
@@ -332,12 +337,17 @@ public class JSONObject extends HashMap implements Map, JSONAware, JSONStreamAwa
     public JSONArray getJSONArray(String key) {
         try {
             Object object = this.get(key);
+            if (object == null) {
+                return new JSONArray();
+            }
             return (JSONArray) object;
         } catch (Exception ex) {
-            Object object = this.get(key);
-            if (object instanceof JSONObject) {
+            if (this.isEmpty(key)) {
+                return new JSONArray();
+            }
+            if (this.get(key) instanceof JSONObject) {
                 JSONArray jsonArray = new JSONArray();
-                jsonArray.add(object);
+                jsonArray.add(this.get(key));
                 return jsonArray;
             }
             throw wrongValueFormatException(key, "JSONArray", null);
