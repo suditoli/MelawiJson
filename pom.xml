@@ -5,6 +5,33 @@
     <artifactId>melawi-json</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <name>Melawi Json</name>
+    <description>Json simple with fluent interface</description>
+    <url>https://github.com/suditoli/MelawiJson</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>Sudito</id>
+            <name>Sudito Li</name>
+            <email>lichanhau@gmail.com</email>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+7</timezone>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:https://github.com/suditoli/MelawiJson.git</connection>
+        <developerConnection>scm:git:https://github.com/suditoli/MelawiJson.git</developerConnection>
+        <url>https://github.com/suditoli/MelawiJson</url>
+    </scm>
     
     <distributionManagement>
         <snapshotRepository>
