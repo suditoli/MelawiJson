@@ -1,4 +1,4 @@
-package io.melawi.json.parser;
+package com.github.suditoli.melawi.json.parser;
 
 import java.util.List;
 import java.util.Map;

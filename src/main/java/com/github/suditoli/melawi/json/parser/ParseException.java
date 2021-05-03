@@ -1,4 +1,4 @@
-package io.melawi.json.parser;
+package com.github.suditoli.melawi.json.parser;
 
 /**
  * ParseException explains why and where the error occurs in source JSON text.

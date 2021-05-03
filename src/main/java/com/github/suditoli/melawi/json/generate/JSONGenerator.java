@@ -1,4 +1,4 @@
-package io.melawi.json.generate;
+package com.github.suditoli.melawi.json.generate;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

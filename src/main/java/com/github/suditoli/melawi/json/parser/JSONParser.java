@@ -2,10 +2,10 @@
  * $Id: JSONParser.java,v 1.1 2006/04/15 14:10:48 platform Exp $
  * Created on 2006-4-15
  */
-package io.melawi.json.parser;
+package com.github.suditoli.melawi.json.parser;
 
-import io.melawi.json.JSONArray;
-import io.melawi.json.JSONObject;
+import com.github.suditoli.melawi.json.JSONArray;
+import com.github.suditoli.melawi.json.JSONObject;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;

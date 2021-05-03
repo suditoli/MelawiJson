@@ -1,4 +1,4 @@
-package io.melawi.json;
+package com.github.suditoli.melawi.json;
 
 /**
  * Beans that support customized output of JSON text shall implement this

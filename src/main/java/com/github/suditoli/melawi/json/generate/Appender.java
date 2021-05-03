@@ -1,4 +1,4 @@
-package io.melawi.json.generate;
+package com.github.suditoli.melawi.json.generate;
 
 import static java.util.Arrays.stream;
 

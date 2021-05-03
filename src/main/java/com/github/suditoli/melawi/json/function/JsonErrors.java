@@ -1,6 +1,6 @@
-package io.melawi.json.function;
+package com.github.suditoli.melawi.json.function;
 
-import io.melawi.json.JSONException;
+import com.github.suditoli.melawi.json.JSONException;
 
 public class JsonErrors {
 

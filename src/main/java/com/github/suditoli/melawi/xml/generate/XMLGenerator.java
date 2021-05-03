@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.melawi.xml.generate;
+package com.github.suditoli.melawi.xml.generate;
 
 /**
  *

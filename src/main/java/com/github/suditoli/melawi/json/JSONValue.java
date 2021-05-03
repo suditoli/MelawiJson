@@ -2,10 +2,10 @@
  * $Id: JSONValue.java,v 1.1 2006/04/15 14:37:04 platform Exp $
  * Created on 2006-4-15
  */
-package io.melawi.json;
+package com.github.suditoli.melawi.json;
 
-import io.melawi.json.parser.JSONParser;
-import io.melawi.json.parser.ParseException;
+import com.github.suditoli.melawi.json.parser.JSONParser;
+import com.github.suditoli.melawi.json.parser.ParseException;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
