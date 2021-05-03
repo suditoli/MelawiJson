@@ -1,4 +1,4 @@
-package io.melawi.json;
+package com.github.suditoli.melawi.json;
 
 public class JSONException extends RuntimeException {
 
