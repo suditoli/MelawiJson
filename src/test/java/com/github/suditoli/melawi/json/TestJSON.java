@@ -1,10 +1,14 @@
-package io.melawi.json;
+package com.github.suditoli.melawi.json;
 
-import io.melawi.json.generate.JSONGenerator;
-import io.melawi.json.parser.JSONParser;
-import io.melawi.xml.generate.XMLGenerator;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+
+import com.github.suditoli.melawi.json.JSONArray;
+import com.github.suditoli.melawi.json.JSONObject;
+import com.github.suditoli.melawi.json.generate.JSONGenerator;
+import com.github.suditoli.melawi.json.parser.JSONParser;
+import com.github.suditoli.melawi.xml.generate.XMLGenerator;
+
 import org.junit.Assert;
 import org.junit.Test;
 
